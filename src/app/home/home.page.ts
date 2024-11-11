@@ -8,10 +8,6 @@ import { AuthService } from '../auth.service';
 })
 export class HomePage {
 
-  authService = inject(AuthService)
-
-  async loginWithGoogle(){
-    this.authService.loginWithGoogle()
-  }
+  
 
 }
