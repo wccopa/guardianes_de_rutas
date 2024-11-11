@@ -1,0 +1,13 @@
+creamos proyecto en firebase
+npm install firebase @angular/fire
+ng add @angular/fire
+
+enviroment:
+
+appmodule:
+import { AngularFireModule } from '@angular/fire/compat';
+
+
+creamos el servicio.
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import firebase from 'firebase/compat/app';
