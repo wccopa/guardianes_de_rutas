@@ -1,0 +1,7 @@
+{
+  "name": "guardianes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
