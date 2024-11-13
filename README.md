@@ -8,6 +8,7 @@ Necesario: "Tener implementado la autenticacion"
   ionic g service guard guards/auth
 ```
 //Paso 2: Crear un getter currentUser en el servicio de autenticación
+
 Agrega el siguiente getter en tu servicio de autenticación para obtener el estado actual del usuario:
 
   ```
