@@ -17,6 +17,7 @@ Agrega el siguiente getter en tu servicio de autenticación para obtener el esta
   }
 ```
 //Paso 3: Inyectar el servicio de autenticación y el enrutador en el guardia
+
 Dentro del archivo auth.guard.ts, inyecta el servicio de autenticación y el enrutador para poder acceder a ellos en la lógica del guardia:
 
   ``` 
@@ -24,6 +25,7 @@ Dentro del archivo auth.guard.ts, inyecta el servicio de autenticación y el enr
   const router = inject(Router)
 ```
 //Paso 4: Definir la lógica de acceso en el guardia de rutas
+
 Agrega la siguiente función en el auth.guard.ts de rutas para permitir o denegar el acceso según el estado de autenticación del usuario:
 
     return authService.currentUser.pipe(
@@ -39,6 +41,7 @@ Agrega la siguiente función en el auth.guard.ts de rutas para permitir o denega
   
 
 //Paso 5: Asignar el guardia de rutas a las rutas protegidas
+
 En el archivo app-routing.module.ts, usa la propiedad canActivate para agregar el guardia de rutas (authGuard) a las rutas que deseas proteger:
 
 ```
