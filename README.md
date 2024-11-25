@@ -6,7 +6,7 @@
 - Paso 1 Creamos el Guard desde la terminal:
 
 ```bash
-  ionic g guard guards/auth
+  ionic g service guards/auth
 ```
 - Paso 2: En el servicio de Auth Crear un getter `currentUser` en el servicio de autenticación
 
